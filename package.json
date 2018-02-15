@@ -6,7 +6,14 @@
   "scripts": {
     "test": "karma start karma.conf.js"
   },
-  "keywords": ["Game of Thrones", "A Song of Ice and Fire", "Ice", "Fire", "Game", "Thrones"],
+  "keywords": [
+    "Game of Thrones",
+    "A Song of Ice and Fire",
+    "Ice",
+    "Fire",
+    "Game",
+    "Thrones"
+  ],
   "author": "Abdullah Yahya",
   "license": "MIT",
   "devDependencies": {
@@ -34,6 +41,8 @@
     "karma-jasmine": "^1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-jquery": "^0.2.2",
+    "lodash": "^4.17.5",
+    "superagent": "^3.8.2",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.10.0"
   }
