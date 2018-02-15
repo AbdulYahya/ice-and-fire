@@ -15,22 +15,25 @@
     </style>
   </head>
   <body>
-    <div class="container d-flex h-100">
-      <div class="row align-self-center w-100">
-        <div class="card mx-auto">
-          <img class="card-img-top" src="build/assets/images/js_gulp_gen_logo.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title" id="bookName"></h5>
-            <ul id="characters">
+    <div class="container">
+      <div class="row align-self-center w-100 mt-5">
+        <div class="col-12 " style="border: solid #f7f7f9;">
+          <div class="input-group my-4">
+            <input type="text" class="form-control" id="searchBar" placeholder="Search...(books, characters, houses)" aria-label="Search bar" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="searchBtn">Search</button>
+            </div>
+          </div>
 
-            </ul>
-            <p class="card-text font-weight-light text-muted">Thank you for using JS-Gulp-Gen to help generate your project!</p>
-            <p class="card-text"><small class="font-weight-light text-muted">If you run into any issues/errors, please submit an issue on <a class="text-muted" href="https://github.com/AbdulYahya/js-gulp-gen/issues" target="_blank">Github</a></small></p>
-            <a class="btn btn-secondary mr-2" href="https://github.com/AbdulYahya" target="_blank">#github</a>
-            <a class="btn btn-secondary mr-2" href="https://linkedin.com/in/ayahya094" target="_blank">#linkedin</a>
-            <a class="btn btn-secondary" href="https://twitter.com/abdul_jt" target="_blank">#twitter</a>
+        </div>
+      </div>
+      <div class="row align-self-center w-100 mt-5">
+        <div class="card mx-auto hidden" id="characterInfo">
+          <div class="card-body">
+            <h5 class="card-title" id="charName"></h5>
           </div>
         </div>
+        <!-- <div class="card-columns mx-auto" id="books"></div> -->
       </div>
     </div>
 
