@@ -1,7 +1,7 @@
 import { IceAndFire } from '../assets/js/ice-and-fire.js';
 import * as _ from 'lodash';
 const iceAndFire = new IceAndFire();
-
+console.log(iceAndFire);
 $(function() {
   // let u = iceAndFire.getBookById(3);
   // let books = iceAndFire.getAllBooks();
@@ -11,6 +11,12 @@ $(function() {
   search.addEventListener('click', function() {
     let searchTerm = $('#searchBar').val();
     let character = iceAndFire.getCharacterByName(searchTerm);
+    // if (searchTerm != '') {
+    //   let character = iceAndFire.getCharacterByName(searchTerm);
+    // } else {
+    //   console.log('Empty!');
+    // }
+
     console.log(character[0].name);
     $('#searchBar').val('');
     $('#characterInfo').removeClass('hidden');

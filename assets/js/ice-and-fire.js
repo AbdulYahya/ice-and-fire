@@ -2,14 +2,9 @@ import * as _ from 'lodash';
 import * as superagent from 'superagent'; // Parses JSON Response for you
 import apiURL from '../../.env';
 
-
 export class IceAndFire {
   constructor() {
-    this.cache = {
-      books: {},
-      characters: {},
-      houses: {}
-    };
+    this.books = [];
   }
 
   request(url) {
@@ -28,7 +23,7 @@ export class IceAndFire {
       apiRequest.open('GET', url, false);
       apiRequest.send(null);
     });
-
+    this.books.push(apiRequest.responseText);
     return JSON.parse(apiRequest.responseText);
   }
 
