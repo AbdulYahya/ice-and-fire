@@ -21,6 +21,7 @@ export class IceAndFire {
       };
 
       apiRequest.open('GET', url, true);
+      apiRequest.setRequestHeader('Accept', 'application/vnd.anapioficeandfire+json; version=1');
       apiRequest.send();
     });
 
