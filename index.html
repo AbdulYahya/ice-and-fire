@@ -8,6 +8,8 @@
     <title>JSGG | Bootstrap</title>
     <link rel="stylesheet" href="build/assets/css/vendor.min.css">
     <link rel="stylesheet" href="build/assets/css/app.css">
+    <script src="build/assets/js/vendor.min.js"></script>
+    <script src="build/assets/js/app.js"></script>
     <style>
       html, body {
         height: 100%;
@@ -21,12 +23,12 @@
           <div class="input-group my-4">
             <input type="text" class="form-control" id="searchBar" aria-label="Text input with dropdown button">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search Type</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Books</a>
-                <a class="dropdown-item" href="#" id="searchBtn">Characters</a>
-                <a class="dropdown-item" href="#">Houses</a>
-              </div>
+              <select class="custom-select" id="searchDropdown">
+                <option selected disabled>Search Type</option>
+                <option value="Books">Books</option>
+                <option value="Characters">Characters</option>
+                <option value="Houses">Houses</option>
+              </select>
             </div>
           </div>
           <!-- <div class="input-group my-4">
@@ -39,16 +41,11 @@
         </div>
       </div>
       <div class="row align-self-center w-100 mt-5">
-        <div class="card mx-auto hidden" id="characterInfo">
-          <div class="card-body">
-            <h5 class="card-title" id="charName"></h5>
-          </div>
-        </div>
+        <div class="card mx-auto hidden" id="characterInfo"></div>
         <!-- <div class="card-columns mx-auto" id="books"></div> -->
       </div>
     </div>
 
-    <script src="build/assets/js/vendor.min.js"></script>
-    <script src="build/assets/js/app.js"></script>
+
   </body>
 </html>

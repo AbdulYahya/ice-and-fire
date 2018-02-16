@@ -8,3 +8,10 @@
 .hidden {
   display: none;
 }
+
+#searchDropdown {
+  font-size: 1.01rem;
+  color: #6c757d;
+  border-color: #6c757d;
+  z-index: 2;
+}
