@@ -13,9 +13,17 @@ $(function() {
     let character = iceAndFire.getCharacterByName(searchTerm);
     console.log(character[0].name);
     $('#searchBar').val('');
-
     $('#characterInfo').removeClass('hidden');
-    $('#charName').html(`${character[0].name}`);
+    $('#characterInfo').append('<div class="card-body">' +
+                                  `<h5 class="class-title">${character[0].name}</h5>` +
+                                  '<ul class="list-group list-group-flush">' +
+                                    `<li class="list-group-item">${character[0].gender}</li>` +
+                                    `<li class="list-group-item">${character[0].culture}</li>` +
+                                    `<li class="list-group-item">${character[0].born}</li>` +
+                                    `<li class="list-group-item">${character[0].titles}</li>` +
+                                  '</ul>' +
+                                '</div>');
+
   });
 
   // console.log(books.length);
