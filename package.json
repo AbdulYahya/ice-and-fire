@@ -41,7 +41,7 @@
     "karma-jasmine": "^1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-jquery": "^0.2.2",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "superagent": "^3.8.2",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.10.0"
